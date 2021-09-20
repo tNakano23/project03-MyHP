@@ -1,3 +1,6 @@
+h2{
+    font-size: 0.9rem;
+}
 
 header {
     display: flex;
@@ -10,11 +13,16 @@ header {
     height: 50px;
     width: 50px;
 }
-.header_text{
+    @media screen and (max-width:780){
+        header{
+            justify-content: center;
+        }
+    }
+/* .header_text{
     font-size: 25px;
     padding: 0 20px;
     color:ghostwhite;
-}
+} */
 /* .navUl{
     position: fixed;
     top: 26px;
@@ -112,7 +120,7 @@ header {
 .main_view{
     height: 600px;
     width: 100%;
-    background-image: url(../img/sea.png);
+    background-image: url(../img/sea.jpg);
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,9 +178,25 @@ header {
     margin: 1%;
     /* background-color: rgb(226, 231, 231); */
 }
+.service01{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service02{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .service01_content{
-    margin: 5px;
+    position: relative;
+    margin: 5px 5px 40px 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -194,9 +218,12 @@ header {
 } */
 
 .con_01_btn{
-    text-align: right;
+    display: flex;
+    flex-direction: row;
 }
+
 .con_01_btn button{
+
     padding: 10px 37px 10px 30px;
     margin: 0 24% 10px 0;
     font-size: 15px;
@@ -204,6 +231,23 @@ header {
     color: ghostwhite;
     border-radius: 5px;
     font-family: sans-serif;
+}
+@media screen and (max-width:780px){
+    .con_01_btn button{
+        position: static;
+        /* right: -30px; */
+        padding: 10px 30vw;
+    }
+}
+.service01btn{
+    position: absolute;
+    right: -20px;
+    bottom: 29px;
+}
+.service02btn{
+    position: absolute;
+    right: -20px;
+    bottom: 29px;
 }
 
 /* section-PROFIELE */
@@ -228,9 +272,18 @@ header {
     width: 300px;
     border-radius: 50%;
 }
+.sec_prof h7{
+    line-height: 20px;
+    width: 50vw;
+}
 .sec_prof p{
     width: 40%;
     padding-top: 20px;
+}
+@media screen and (max-width:780px) {
+    .sec_prof_p{
+        width: 3vw;
+    }
 }
 .prof_sns{
     display: flex;
@@ -255,6 +308,6 @@ footer{
 
 @media screen and (max-width:780px) {
     p {
-        font-size: 20px;
+        font-size: 1.0rem;
     }
 }
