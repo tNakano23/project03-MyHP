@@ -112,7 +112,7 @@ header {
 .main_view{
     height: 600px;
     width: 100%;
-    background-image: url(../img/seaのコピー.jpg);
+    background-image: url(../img/sea.png);
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,6 +239,10 @@ header {
 .prof_snsIcon_twitter{
     color:indianred;
     margin: 0 16px;
+}
+.meiwakuTwi-is-active{
+    color: darkturquoise;
+    display: none;
 }
 
 footer{
